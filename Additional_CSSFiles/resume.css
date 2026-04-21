@@ -1,5 +1,12 @@
+img {
+    height: 80vh;
+}
+
+p {
+    padding: 1%;
+}
+
 #personal {
-    
     width: fit-content;
 }
 
@@ -28,7 +35,7 @@
     display: block;
 }
 
-/* Style for the buttons */
+/* Styling for buttons */
 .tab-link {
     margin-top: 2%;
     padding: 10px 20px;
@@ -39,18 +46,11 @@
 }
 
 .tab-link.active {
-    background: #6a0c0d; /* Your brand red */
+    background: #6a0c0d; 
     color: #F4F3F3;
 }
 
-img {
-    height: 80vh;
-}
-
-p {
-    padding: 1%;
-}
-
+/* change the colour of my progress bars, as well as the hover colour */
 progress {
     accent-color: #6a0c0d;
 }
