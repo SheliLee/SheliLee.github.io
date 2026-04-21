@@ -1,3 +1,4 @@
+// Code to allow me to click buttons and have content hide and show as needed. 
 function openTab(evt, tabName) {
     var i, tabContent, tabLinks;
 
