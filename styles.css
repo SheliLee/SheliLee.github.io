@@ -2,38 +2,7 @@
 /* 
 Color Code:
 #6a0c0d(red) - #0D98BA(blue) - #F4F3F3(gray
-Font Choice: 
- */
-/* .tomorrow-medium {
-  font-family: "Tomorrow", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-} */
-/* .tomorrow-regular-italic {
-  font-family: "Tomorrow", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-.tomorrow-medium-italic {
-  font-family: "Tomorrow", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-} */
-/* // <weight>: Use a value from 100 to 800
-// <uniquifier>: Use a unique and descriptive class name */
 
-/* .trispace-<uniquifier> {
-  font-family: "Trispace", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-} */
-
-
-
- /* https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units */
 /* GLOBAL */
 * {
     margin: 0;
