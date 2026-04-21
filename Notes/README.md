@@ -8,3 +8,5 @@ DO NOT save the photos; they were taken by me and are owned by me.
 More pages and more content will be coming as I code and locate all my material.
 
 If you have any feedback on my comments or how I can comment better, feel free to. Be Kind. 
+
+
