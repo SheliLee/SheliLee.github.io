@@ -1,0 +1,134 @@
+/* This is for the cross page styles */
+/* 
+Color Code:
+#6a0c0d(red) - #0D98BA(blue) - #F4F3F3(gray
+Font Choice: 
+ */
+/* .tomorrow-medium {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+} */
+/* .tomorrow-regular-italic {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.tomorrow-medium-italic {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+} */
+/* // <weight>: Use a value from 100 to 800
+// <uniquifier>: Use a unique and descriptive class name */
+
+/* .trispace-<uniquifier> {
+  font-family: "Trispace", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+
+
+ /* https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units */
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+     font-style: italic;
+    /* background-color: #531518;    */
+    background-image: url("Images/Background@2x-8.png");
+    background-size: cover;
+    background-attachment: scroll; /* Default behavior */
+}
+
+.bodyContent {
+    padding-top: 120px; /* Adjust this based on your navbar height */
+}
+
+h1-6 {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+nav {
+    /* display: block; */
+    /* justify-content: center; */
+    /* background: rgba(255, 255, 255, 0.538); */
+    /* background-color: #4F37360D; */
+    /* background-color: #F4F3F3; */
+    backdrop-filter: blur(15px);
+    /* border-bottom: 8px solid #5315180D; */
+    position: fixed;
+    top: 0%;
+    margin-top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#mainNav {
+    display: flex;
+    padding-top: .3%;
+    /* padding-bottom: .3%; */
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: .3%;
+    /* margin-bottom: .3%; */
+    margin-bottom: 0;
+    max-width: 50%;
+}
+
+#mainNav a {
+    font-size: 1.5em;
+    /* background: rgba(156, 14, 14, 0.137); */
+    /* background-color: #6a0c0d; */
+    padding: .5% 5%;
+    border-radius: 100px 100px 0px 0px;
+}   
+
+a {
+    display: flex;
+    text-decoration: none;
+    color: #0D98BA; 
+    padding-left: .3%;
+    font-family: "Trispace", sans-serif;
+    font-optical-sizing: 24;
+    font-weight: 240;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* Home */
+#index {
+
+background-image: url("Images/Artboard\ 1@2x-8.png"), url("Notes/Background@2x-8.png");
+
+  /* First value applies to Image 1, second value to Image 2 */
+  background-repeat: no-repeat, repeat;
+  background-attachment: scroll, scroll;
+
+  /* Optional: position each image separately */
+  /* background-position: center, left top; */
+    
+}
+
+
+html, 
+body {
+    scroll-behavior: smooth;
+    scroll-padding-top: 12vh;
+} 

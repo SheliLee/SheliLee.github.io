@@ -1,0 +1,64 @@
+#personal {
+    
+    width: fit-content;
+}
+
+.holder {
+    display: block;
+    margin: 20px auto;
+    padding: 2%;
+    width: 50%;
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background to see the blur */
+    border-radius: 10px;
+    color: #6a0c0d;
+    Border: 1px solid #6a0c0d;
+}
+
+/* Hide all content initially */
+.tab-content {
+    display: none;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 10px 10px;
+}
+
+/* Show the active content */
+.tab-content.show {
+    display: block;
+}
+
+/* Style for the buttons */
+.tab-link {
+    margin-top: 2%;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    /* background: #0D98BA; */
+    color: #0D98BA;
+}
+
+.tab-link.active {
+    background: #6a0c0d; /* Your brand red */
+    color: #F4F3F3;
+}
+
+img {
+    height: 80vh;
+}
+
+p {
+    padding: 1%;
+}
+
+progress {
+    accent-color: #6a0c0d;
+}
+
+progress:hover {
+    accent-color: #0D98BA;
+}
+
+li::marker {
+  content: "➔ ";
+}

@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+details {
+    margin-top: 2vw;  
+}
+ div {
+    color: #6a0c0d;
+    margin-top: .3vw;
+ }
+
+ summary {
+    font-size: 1.5em;
+    color: #0D98BA;
+    font-family: "Trispace", sans-serif;
+    font-optical-sizing: 24;
+    font-weight: 240;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+ }
+
+ main {
+    display: block;
+    margin: 120px auto;
+    padding: 2%;
+    width: 75%;
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background to see the blur */
+    border-radius: 10px;
+    color: #6a0c0d;
+    Border: 1px solid #6a0c0d;
+ }
+
+div.gallery {
+  border: 1px solid #0D98BA;
+}
+
+div.gallery:hover {
+  border: 1px solid #6a0c0d;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 4px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

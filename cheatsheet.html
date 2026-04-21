@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- the width of my screen is the same width as my device -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Additional_CSSFiles/cheatsheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Trispace:wght@100..800&display=swap" rel="stylesheet">
+    <title>Cheat Sheet</title>
+</head>
+<body>
+
+    <nav id="navigation">
+        <div id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="interests.html">Interest</a>
+            <a href="cheatsheet.html">CheatSheet</a>
+        </div>
+    </nav>
+
+    <main class="bodyContent">
+        <h1>Coding CheatSheet</h1>
+
+        <div id="innerNav">
+            <h2>Cheat Sheet <br>
+                <!-- <a href="#HTML">HTML</a> -->
+                <a href="#CSS">CSS</a>
+                <!-- <a href="#JavaScript">JavaScript</a> </h2> -->
+        </div>
+            <!-- I made a table list of how the basic box styling work -->
+    </section>
+    <section id="CSS">
+        <summary id="sheetCSS"><h3>CSS Cheatsheet</h3></summary> 
+    <!--  (content="width=device-width, initial-scale=1.0"-- HTML^^^), @media,   -->
+     
+        <table>
+            <thead>
+                <tr>
+                    <th>Role</th>
+                    <th>Modules</th>
+                    <th>Properties</th>
+                    <th>Decription</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Screen Mesurments</td>
+                    <td></td>
+                    <td></td>
+                    <td>Ways to write out mesurments
+                        <!-- I added this in as a drop down because it kept needing it when i was looking to use something other then pixels so i used my reference notes -->
+                        <details>
+                            <summary>Click for examples</summary>
+                            <!-- I went with dl/dt here to have a word/deffinition aspect to this section. -->
+                            <dl>
+                            <h5>Relitive Units</h5>
+                            <dt>rem</dt>
+                            <dd>(Root em) Relative to the font-size of the root element (usually <html>). In most browsers, 1rem equals 16px by default.</dd>
+                            </dl>
+                            <dl>
+                            <dt>em</dt>
+                            <dd>Relative to the font-size of the element's parent (for typography) or the element itself (for other properties like width).</dd>
+                            </dl>
+                            <dl>
+                            <dt>%</dt>
+                            <dd>(Percentage) Relative to the parent element's dimensions for that specific property (e.g., width: 50% is half of the parent's width)</dd>
+                            </dl>
+                            <dl>
+                            <dt>vw/vh</dt>
+                            <dd>(Viewport Width/Height) 1vw is equal to 1% of the browser window's width; 1vh is 1% of its height.</dd>
+                            </dl>
+                            <dl>
+                            <dt>vmin/vmax</dt>
+                            <dd>Relative to 1% of the viewport’s smaller (vmin) or larger (vmax) dimension.</dd>
+                            </dl>
+                            <dl>
+                            <dt>ch</dt>
+                            <dd> Relative to the width of the "0" (zero) character in the current font.</dd>
+                            </dl>
+                            <dl>
+                            <dl>
+                            <dt>fr</dt>
+                            <dd>distributes the "free space" that remains after any fixed-size items (like pixels or percentages) and grid gaps are accounted for.</dd>
+                            </dl>
+                                <h5>Absolute Units</h5>
+                            <dt>px</dt>
+                            <dd>(Pixels): The most common unit for screen displays. While traditionally one screen dot, it is formally defined in CSS as 1/96th of an inch.</dd>
+                            </dl>
+                            <dl>
+                            <dt>pt</dt>
+                            <dd>(Points): Standard for typography; 1pt is 1/72nd of an inch.</dd>
+                            </dl>
+                            <dl>
+                            <dt>cm/mm/in</dt>
+                            <dd> Centimeters, millimeters, and inches. These are physical measurements mostly used for print stylesheets</dd>
+                            </dl>
+                            <dl>
+                                <h5>Keywords</h5>
+                            <dt>auto</dt>
+                            <dd>The browser calculates the size based on default layout rules.</dd>
+                            </dl>
+                            <dl>
+                            <dt>min-content</dt>
+                            <dd> Shrinks the element to the smallest size possible without overflowing its content.</dd>
+                            </dl>
+                            <dl>
+                            <dt>max-content</dt>
+                            <dd>Expands the element to its "ideal" size to fit all content on one line if possible.</dd>
+                            </dl>
+                            <dl>
+                            <dt>fit-content</dt>
+                            <dd>A mix of both that attempts to use the available space but caps at max-content.</dd>
+                            </dl>
+                            <cite>
+                                Notes from Google Link provided:
+                                https://www.google.com/search?q=what+are+the+sizing+measurements+for+CSS&rlz=1C1RXQR_enCA1072CA1074&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQIRgKGKABMgcIAhAhGJ8FMgcIAxAhGJ8FMgcIBBAhGJ8F0gEJMTQzOTlqMGo3qAIIsAIB8QXNp-F_qxxTeQ&sourceid=chrome&ie=UTF-8&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3u6MWRtAr31GIrXLfiKhJJ9zMfgfAzmC0EaStM63-fN2fJznjTITF3FGZoxrj5LOiYMzawwK6V4mG9zl0dB2F_LD2zLcsd5_iXXlP9mmFknG9Mx5vSGkuOM1vv9tWSRmgK-EGXaZP-FthWW2gyyAkB-vNq5K4Sx7vd_Vdk9VNq5lJl0vqg&ved=2ahUKEwi649bPp_uTAxX-DDQIHR5tOR8Q0NsOegQIAxAB&aep=10&ntc=1&cs=1&hl=en-US&biw=2560&bih=929&mstk=AUtExfBW71ueD-Rnc5RT-TvoRpjVDTn_WAtymCx8xYlAij_0yka32iu-QZPyyjE0C9hLl0RgmftYS4o-89L3RRtFYS2NW34HX5pFg7sFGfmRTTSp7cKVrmZo-v1K54MjnxFQn9DMoGsdNzzh05ZpJ_sajP-OnuOr1eIrSPx66mpdmPYvG24Nd9gSiXQ3oZj74bsamh9Kczu73lyDZFS2ZjPQdZsA1_O2oo2Ivrfv7bi-DzmoTEWsZqV-m9hm-i5k9wEQ7b2ld75asNVsgg&csuir=1&mtid=poXlaeOpEPf20PEPy4HP8As&udm=50</cite>
+                        </details>
+                    </td>
+                </tr>
+                <!-- I wanted to understand how Box-styling, Flexboxes and Grids worked, so I did research and used that as a table. This seemed important to have on had as I know from experience that your code will not work correctly without the knoledge of how to use them -->
+                <tr>
+                    <td>Layout Engines</td>
+                    <td>Box Modeling</td>
+                    <td></td>
+                    <td>Every Element in CSS is a box. The box modeling specifies the rectangle for you to format. This consists of the entire content including the content itself, the inside space (padding), the border around the content, and the outside space (margin). With this you can understand how the element is structured and what parts to modify in formatting for what you need. <br>
+                    </td>
+                    <!-- https://www.youtube.com/watch?v=rIO5326FgPE
+                     https://www.youtube.com/watch?v=nSst4-WbEZk-->
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltbox-sizing:border-box&gt</b></td>
+                    <td>You can then use &ltbox-sizing: boarder box&gt to combine these elements together to do the math for you to display the content as actual size when adjusting units for formatting.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Flex Boxes</td>
+                    <td></td>
+                    <td>This is a very specific one-dimental layout model for you to arrange elements within a single column or row. it is efficent when wanting to distribute space and align your items within the container itself. While usisng &ltdisplay: flex&gt you automatically default all your content to the main horrizontal axis of the page, from there you begin your sytling. There are many properties you can use for further format your content from here.
+                    </td>
+                    <!-- https://www.youtube.com/watch?v=phWxA89Dy94 -->
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltflex-direction: &gt</b></td>
+                    <td>and with this you can change the direction of the content shifting it from one axis to another for formmating on that axis, you do this by setting it to either row or column.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltjustify-content: &gt</b></td>
+                    <td> this give you the ability to move your content along the main axis (horizontal), this is also the default flex direction if you do not change it in flex-direction.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltalign-items: &gt</b></td>
+                    <td>this gives you the ability to move content along the cross access (vertical) </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltflex-wrap: &gt</b></td>
+                    <td> this allows you to formats your items to either wrap when space runs out or hold their position no matter the amount of space available, depending on the fomatting you chooose. No wrap is the deafult.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltalign-content: &gt</b></td>
+                    <td> this only becomes avaiable when you set flex-wrap :wrap. This then opens of the ability to align all content along the cross axis, while holding it all together by default.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltgap: &gt</b></td>
+                    <td> this gives you the ability to set the gap between the content inside the container.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltflex-grow: &gt</b></td>
+                    <td> this allows you to select a specific item, series of elements or all elements within your content and expand it to grow to fill the remainder of the container.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltflex-shrink: &gt</b></td>
+                    <td> this allows you to specific spacific items, or item, to shink at a different rate, or not at all, as compaired to the remaining items within the container as the viewport changes in size.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltflex-basis: &gt</b></td>
+                    <td>This would be used when your item has a spacific size setting and you want to over ride it.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltflex: &gt</b> </td>
+                    <td>this is the short hand version for grow/shrink/basis combined together. It can be used with the three values in one. When only one value is used, it leaves the rest as default.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltalign-self: &gt</b></td>
+                    <td> this is for an individual item so you can over ride the main align-items and it will be placed different as you specify within the container, along the vertical axis.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltorder: &gt</b></td>
+                    <td> this is so you can change the order the items display within your container. the default of this is 0 and works with positive and negitive numbers as placement. This is not a reecomnded property to use.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Grid</td>
+                    <td></td>
+                    <td>This is the two-dimentaioal option that allows you to have more accurate placements of elements usisng a grid system. With this it can  utilize both the column and the rows simultaneously you want to arrange your element on. This means you can position elements whatever way you wish where ever you wish, from stacked to spaced out. The system uses numbered row and column lines in a grid pattern to make up square cells and tracks. for this to work you need a container with smaller containers inside, you then set properties to move forward from there. A note to remember: if you are layering do not forget to change your z-index for the layers. 
+                    <!-- https://www.youtube.com/watch?v=EiNiSFIPIQE -->
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltdisplay: grid&gt</b></td>
+                    <td> is used to tell the formatting you are setting up a grid to work on.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltgrid-template-rows/column: &gt</b></td>
+                    <td> are used to input how many rowns and columns you with to work with. They define a track for each value. You need to add a value for each row/colum you wish your have in your layout.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltgrid-row/column-start/end: &gt</b></td>
+                    <td> you must use all four properies for each item allow you to position your items within the grid by ususing values</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltgrid-row/column: &gt</b></td>
+                    <td> this is the short cut for the four values. This one you need to use two values seperated by a slash. The first one is the start and the second is the ending line. <br>Alternitivly you can use the smap keyword and define the number of cells you wish your item to span. The problem with this method is you dont define where your item starts so it could push other items to different positions when you span. </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>&ltgrid-area: &gt</b></td>
+                    <td> this takes four values: row and colum start, then rown and column end, in that order seprated by a slash. This is the one reccomended to use.  </td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+        <!-- I had big dreams I will finish this as I get more familiar with JavaScript -->
+    <!-- </section>
+    <section id="JavaScript">JavaScript
+        <summary id="sheetCSS">JavaScript CheatSheet</summary> 
+     
+        <table>
+            <thead>
+                <tr>
+                    <th>Catagory</th>
+                    <th>Decriptor</th>
+                    <th>Name</th>
+                    <th>Decription</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basics and Variables</td>
+                    <td>Syntax</td>
+                    <td>Statments</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Comments</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Keywords</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Declarations</td>
+                    <td>var</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>let</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>const</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td>Functions</td>
+                    <td>Types</td>
+                    <td>normal</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>arrow</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>parameters</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td>Arrays</td>
+                    <td>Ops</td>
+                    <td>push/pull</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>map/filter</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>length</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td>DOM</td>
+                    <td>Web Control</td>
+                    <td>getElement</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>innerHTML</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td>Events</td>
+                    <td>User Actions</td>
+                    <td>click</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>input</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>submit</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td>Async JS</td>
+                    <td>Non-Blocking</td>
+                    <td>callback</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>promise</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>async/await</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td>Error & ES6+</td>
+                    <td>Handling</td>
+                    <td>try/catch</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>throw</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>finally</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Modern JS</td>
+                    <td>spread</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>distruct</td>
+                    <td>Decriptions</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Modules</td>
+                    <td>Decriptions</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    </main>   
+</body>
+</html> -->

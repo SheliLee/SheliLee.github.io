@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Additional_CSSFiles/resume.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Trispace:wght@100..800&display=swap" rel="stylesheet">
+    <title>Resume</title>
+</head>
+<body>
+    <nav id="navigation">
+        <div id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="interests.html">Interest</a>
+        <a href="cheatsheet.html">CheatSheet</a>
+        </div>
+    </nav>
+
+    <main class="bodyContent">
+
+        <div class="holder" id="personal">
+            <p> <img src="Images/FullCard@2x-8.png">
+            </p>
+            <a href="Images/FullCard@2x-8.png" download>Download File</a>
+        
+        </div>
+
+        <div class="holder" id="profile"><h2>Profile</h2>
+            <p>I am a Digital Design graduate and photographer transitioning into Digital Marketing with a foundation in Front-End Development. My goal is to bridge the gap between creative design and technical execution, using my understanding of both to build better digital experiences. With over a decade of professional photography experience—from fast-paced newsroom sports to detailed macro studies—I bring a unique 'content-first' lens to every campaign.
+                <br><br>
+            While I specialize in layout design and social media strategy, I am constantly looking to learn and grow on my journey. I take everything I learn from design, code, and business strategy and apply it directly to the projects I do to ensure they are visually purposeful, technically sound, and results-driven.</p>
+        </div>
+
+        <div class="holder" id="education"><h2>Education</h2>
+            <p><b>Software Development Diploma (Apprenticeship Style)</b> <i>Bow Valley College</i> | Sept 2025 – Present <br>Currently building foundations in programming, database design, and software problem-solving.
+            <br><br><b>Digital Design Diploma</b> <i>Bow Valley College</i> | Sept 2022 – April 2025 GPA: 3.46/4.00.
+            <br>Specialized in branding, UX/UI foundations, and visual communication.</p>
+        </div>
+
+        <div class="holder" id="professional"><h2>Professional Summery</h2>
+            <p>
+            <b>Technology & Print Solutions Consultant</b> | <i>Staples Canada</i> March 2022 – August 2025 | Calgary, AB 
+            <br>Acted as the primary technical intermediary, translating complex design constraints and production jargon into clear, actionable terms for clients.Managed end-to-end projects from initial consultation to final delivery, ensuring strict quality control and deadline adherence.Guided customers through digital workflows, troubleshooting technical issues with printing and creative file preparation.
+            <br><br> 
+            <i>Professional Attributes:</i> <br>Patient technical communication, cross-functional collaboration, creative problem-solving, and adaptability under pressure. <br>
+            </p>
+
+        </div>
+
+        <div class="holder">
+        <header class="portfolio-intro">
+            <h1>Expertise & Experience</h1>
+            <p>Bridging the gap between technical web infrastructure and high-impact visual storytelling.</p>
+        </header>
+
+        <section class="tabs-container">
+            <div class="tab-menu">
+                <button class="tab-link active" onclick="openTab(event, 'Marketing')">Digital Marketing</button>
+                <button class="tab-link" onclick="openTab(event, 'Design')">Digital Design</button>
+                <button class="tab-link" onclick="openTab(event, 'Photo')">Photography</button>
+                <button class="tab-link" onclick="openTab(event, 'Dev')">Web Dev</button>
+            </div>
+
+            <div id="Marketing" class="tab-content show">
+                <h3>Digital Marketing & Strategy</h3>
+                <div class="achievement-highlight">
+                    <h4>#1 Ranked Marketing Campaign Lead</h4>
+                    <p>Led a simulation-based marketing campaign to the top spot in a competitive business marketing class. Analyzed market trends and competitor data to pivot strategy for maximum ROI.</p>
+                </div>
+                <ul>
+                    <li>Content Strategy & Social Media Planning</li>
+                    <li>Brand Identity Management</li>
+
+                    
+                </ul>
+            </div>
+
+            <div id="Design" class="tab-content">
+                <h3>Digital Designer</h3>
+                <p>Graduate of the 72-hour intensive Digital Design program at BVC (3.46 GPA).</p>
+                <p>Design & UI/UX: Responsive Design Principles, Branding, Typography, Layout Design, Figma, Visual Composition.Adobe Creative Suite: InDesign (Id), Illustrator (Ai), Photoshop (Ps), Premiere Pro (Pr), After Effects (Ae), Media Encoder (Me), Animate (An).</p>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h4>Shamoon Jewelers</h4>
+                        <p>Full social media campaign, branding mockups, and event calendar.</p>
+                    </div>
+                    <div class="project-card">
+                        <h4>Rough Cut Video</h4>
+                        <p>Brand-aligned window decals, shelf tags, and Instagram templates.</p>
+                            <br><br>
+                        <label for="file">InDesign</label>
+                        <progress id="file" value="65" max="100"> </progress>
+                        <label for="file">Illustrator</label>
+                        <progress id="file" value="70" max="100"> </progress>
+                        <label for="file">After Effects</label>
+                        <progress id="file" value="67" max="100"> </progress><br>
+                        <label for="file">Figma</label>
+                        <progress id="file" value="50" max="100"> </progress>
+                        </div>
+                        
+                </div>
+            </div>
+
+            <div id="Photo" class="tab-content">
+                <h3>Photographer</h3>
+                <p>10+ years of diverse experience across various mediums.</p>
+                <ul>
+                    <li><strong>Editorial:</strong> Freelance sports photography for <em>The Flin Flon Reminder</em> (Hockey focus).</li>
+                    <li><strong>Community:</strong> Event photography for Career Trek projects.</li>
+                    <li><strong>Niche:</strong> High-resolution Macro photography for digital backgrounds and prints.</li>
+                    <li><strong>Specialized:</strong> Headshots, Product, Family, and Mental Health shoots.</li>
+                        <br><br>
+                    <label for="file">Photoshop</label>
+                    <progress id="file" value="32" max="100"> 32% </progress>
+                </ul>
+            </div>
+
+            <div id="Dev" class="tab-content">
+                <h3>Front-End Web Development</h3>
+                <p>Technical foundations that allow for high-performing marketing assets.</p>
+                <ul>
+                    <!-- Development Foundations: HTML5, CSS, JavaScript, Git/GitHub, Visual Studio Code -->
+                    <li>HTML5 & CSS3 (layout and responsive design</li>
+                    <li>Understanding of JavaScript & Software Logic</li>
+                        <br><br>
+                    <label for="file">Visual Studio Code</label>
+                    <progress id="file" value="80" max="100"> 32% </progress>
+                    <label for="file">SQL Server Managment</label>
+                    <progress id="file" value="65" max="100"> 32% </progress><br>
+                    <label for="file">Visual Studio</label>
+                    <progress id="file" value="50" max="100"> 32% </progress>
+                    <label for="file">GitHub</label>
+                    <progress id="file" value="30" max="100"> 32% </progress>
+                </ul>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <script src="JavaScriptFiles/resume.js"></script>
+</body>
+</html>
+</body>
+
+<footer>
+    <!-- Socials -->
+</footer>
+</html>
